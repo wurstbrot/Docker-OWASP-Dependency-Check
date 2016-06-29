@@ -10,5 +10,5 @@ RUN useradd -ms /bin/bash dockeruser
 USER dockeruser
 
 WORKDIR /report
-ENTRYPOINT /usr/share/dependency-check/bin/dependency-check.sh --scan "/src" --project "dependeny-check-project" 
+ENTRYPOINT /usr/share/dependency-check/bin/dependency-check.sh --scan "/src" --project "dependeny-check-project" --format "ALL" 
 
